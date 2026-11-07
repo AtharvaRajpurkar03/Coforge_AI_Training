@@ -1,0 +1,8 @@
+2026-11-05 23:38:43,371 | CoforgeCustomerAPI | INFO | GetAllCustomers API called
+2026-11-05 23:38:43,393 | CoforgeCustomerAPI | INFO | Succesfully retrieved %s customers 2
+2026-11-05 23:39:26,518 | CoforgeCustomerAPI | INFO | GetCustomerById API called
+2026-11-05 23:39:32,029 | CoforgeCustomerAPI | INFO | GetCustomerById API called
+2026-11-05 23:40:55,419 | CoforgeCustomerAPI | INFO | GetAllCustomers API called
+2026-11-05 23:40:55,426 | CoforgeCustomerAPI | INFO | Succesfully retrieved %s customers 2
+2026-11-05 23:41:18,563 | CoforgeCustomerAPI | INFO | GetCustomerById API called
+2026-11-05 23:44:25,672 | CoforgeCustomerAPI | INFO | GetAllCustomers API called
