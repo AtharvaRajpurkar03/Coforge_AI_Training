@@ -1,0 +1,6 @@
+2026-11-11 07:34:01,380 | InventoryProductManagementAPI | INFO | Account Created 123456
+2026-11-11 07:34:43,668 | InventoryProductManagementAPI | INFO | Account Created 654321
+2026-11-11 07:35:40,474 | InventoryProductManagementAPI | INFO | Account Updated 123456
+2026-11-11 07:36:28,904 | InventoryProductManagementAPI | WARNING | Duplicate Email or Account Number
+2026-11-11 07:36:43,902 | InventoryProductManagementAPI | INFO | Account Created 13579
+2026-11-11 07:36:55,816 | InventoryProductManagementAPI | INFO | Account Closed 13579

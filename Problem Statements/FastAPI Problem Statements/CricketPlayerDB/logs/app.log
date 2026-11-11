@@ -1,0 +1,36 @@
+2026-11-10 08:43:17,196 | CricketPlayerAPI | ERROR | Unexpected Create Error
+Traceback (most recent call last):
+  File "C:\Users\Atharva.Rajpurkar\CricketPlayerDB\main.py", line 26, in create_player
+    new_player=service.create_player(db,player)
+  File "C:\Users\Atharva.Rajpurkar\CricketPlayerDB\services\cricketplayer_service.py", line 10, in create_player
+    db.refresh()
+    ~~~~~~~~~~^^
+TypeError: Session.refresh() missing 1 required positional argument: 'instance'
+2026-11-10 08:46:52,846 | CricketPlayerAPI | ERROR | Unexpected Create Error
+Traceback (most recent call last):
+  File "C:\Users\Atharva.Rajpurkar\CricketPlayerDB\main.py", line 27, in create_player
+    logger.info(f"Player created {player.player_id}")
+                                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\Atharva.Rajpurkar\CricketPlayerDB\venv\Lib\site-packages\pydantic\main.py", line 1110, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'CricketPlayerCreate' object has no attribute 'player_id'
+2026-11-10 08:50:48,231 | CricketPlayerAPI | INFO | Player created 3
+2026-11-10 08:51:45,698 | CricketPlayerAPI | INFO | Player created 4
+2026-11-10 08:52:35,349 | CricketPlayerAPI | WARNING | Player {player_id} not found
+2026-11-10 08:53:13,324 | CricketPlayerAPI | INFO | Player Updated 4
+2026-11-10 08:53:23,008 | CricketPlayerAPI | WARNING | Player {player_id} not found
+2026-11-10 08:53:23,008 | CricketPlayerAPI | ERROR | Update Error
+Traceback (most recent call last):
+  File "C:\Users\Atharva.Rajpurkar\CricketPlayerDB\main.py", line 69, in update_player
+    raise HTTPException(status_code=404,detail="Player not found")
+fastapi.exceptions.HTTPException: 404: Player not found
+2026-11-10 08:53:27,310 | CricketPlayerAPI | WARNING | Player {player_id} not found
+2026-11-10 08:53:27,310 | CricketPlayerAPI | ERROR | Update Error
+Traceback (most recent call last):
+  File "C:\Users\Atharva.Rajpurkar\CricketPlayerDB\main.py", line 69, in update_player
+    raise HTTPException(status_code=404,detail="Player not found")
+fastapi.exceptions.HTTPException: 404: Player not found
+2026-11-10 08:56:34,929 | CricketPlayerAPI | WARNING | Player {player_id} not found
+2026-11-10 08:56:49,620 | CricketPlayerAPI | INFO | Player deleted 2
+2026-11-10 08:56:55,546 | CricketPlayerAPI | INFO | Player deleted 3
+2026-11-10 08:57:05,992 | CricketPlayerAPI | WARNING | Player {player_id} not found

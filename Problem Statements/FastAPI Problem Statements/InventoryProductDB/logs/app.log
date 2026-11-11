@@ -1,0 +1,18 @@
+2026-11-11 05:58:21,293 | InventoryProductManagementAPI | INFO | Product created 1
+2026-11-11 05:58:51,227 | InventoryProductManagementAPI | WARNING | Product 2 not found
+2026-11-11 05:59:52,286 | InventoryProductManagementAPI | ERROR | Update error
+Traceback (most recent call last):
+  File "C:\Users\Atharva.Rajpurkar\InventoryProductDB\main.py", line 65, in update_product
+    product=service.update_product(db,product_id,data)
+  File "C:\Users\Atharva.Rajpurkar\InventoryProductDB\services\inventoryproduct_service.py", line 27, in update_product
+    for key,value in data.model_dump().items():
+                     ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'model_dump'
+2026-11-11 06:01:55,229 | InventoryProductManagementAPI | INFO | Product 1 updated
+2026-11-11 06:02:41,593 | InventoryProductManagementAPI | INFO | Product created 2
+2026-11-11 06:03:05,841 | InventoryProductManagementAPI | WARNING | Product 3 not found
+2026-11-11 06:03:10,423 | InventoryProductManagementAPI | INFO | Product 2 deleted
+2026-11-11 06:03:26,057 | InventoryProductManagementAPI | INFO | Product created 3
+2026-11-11 06:06:04,633 | InventoryProductManagementAPI | INFO | Product 1 stock increased
+2026-11-11 06:06:14,168 | InventoryProductManagementAPI | INFO | Product 1 stock increased
+2026-11-11 06:06:33,948 | InventoryProductManagementAPI | INFO | Product 1 stock increased
